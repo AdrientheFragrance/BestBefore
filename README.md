@@ -1,20 +1,20 @@
-# BestBefore
+# 🍽️ BestBefore
 BestBefore is a food-expiration-date-tracking website that allows users to log their food items with their respective “best by” dates and be provided with routine recipes before their groceries expire.
 
-# Target browsers
+## Target browsers
 ...
 
-# Developer Manual
-- ## How to install our application and all dependencies
+## Developer Manual
+- ### How to install our application and all dependencies
   ...
-- ## How to run our application on a server
+- ### How to run our application on a server
   ...
-- ## How to run tests for our software
+- ### How to run tests for our software
   ...
-- ## The API we used for our server application
+- ### The API we used for our server application
   ...
-- ## Expectations for navigating known bugs
+- ### Expectations for navigating known bugs
   ...
-- ## Road-map for future development
+- ### Road-map for future development
   ...
 
