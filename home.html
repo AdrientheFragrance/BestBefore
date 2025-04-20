@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> BestBefore </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+
+        <nav class="nav">
+            <a href="home.html" class="split"> BestBefore </a>
+            <a href="about.html"> About </a>
+            <a href="help.html"> Help </a>
+        </nav>
+
+        <div class="container">
+
+            <div class="sidebar">
+                <h2> Pantry </h2> 
+                <form id="addIngredient">
+                    <label for="ingredient"> Ingredient </label>
+                    <input type="text" id="ingredient" required> 
+                    <br>
+                    <label for="expiration"> Expiration Date </label>
+                    <input type="text" id="expiration"> 
+                    <br>
+                    <input type="submit" value="Add Ingredient"> </input>
+                    <br>
+                </form>
+            </div>
+
+            <div class="main-content">
+                <h2> Recipes </h2> 
+                <h3> Select ingredients to find recipes! </h3>
+                <br>
+                <h3 id="loading"> Loading recipes ... </h3>
+                
+                  <table id="resultsTable">
+                    <thead>
+                      <tr>
+                      </tr>
+                    </thead>
+                    <tbody id="resultsBody"></tbody>
+                  </table>
+            </div>
+
+            <div class="sidebar2">
+                <form id="searchRecipe"></form>
+                    <div class="pantryitem">
+                        <p style="font-weight:bold"> Ingredient Name </p>
+                        <p style="font-style:italic"> Expires MM/DD/YY </p>
+                        <input type="submit" value="Find Recipes"> </input>
+                    </div>
+                    <br>
+                    <div class="pantryitem">
+                        <p style="font-weight:bold"> Ingredient Name </p>
+                        <p style="font-style:italic"> Expires MM/DD/YY </p>
+                        <input type="submit" value="Find Recipes"> </input>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <p> Copyright @ 2025. All rights reserved. </p>
+        </footer>
+
+    </body>
+
+</html>
