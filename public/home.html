@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> BestBefore </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script type="module" src="script.js"></script>
+    </head>
+    
+    <body>
+
+        <nav class="nav">
+            <img src="images/BestBeforeLogo.png" style="width:12%;padding:8px;margin:10px;margin-left:40px;">
+            <a href="help.html"> Help </a>
+            <a href="about.html"> About </a>
+            <a href="home.html"> Home </a>
+        </nav>
+
+        <div class="container">
+
+            <div class="sidebar-container">
+                <div class="sidebar">
+                    <h2> Pantry Items </h2> 
+                    <form id="addIngredient">
+                        <label for="ingredient"> Ingredient </label>
+                        <input type="text" id="ingredient" required> 
+                        <br>
+                        <label for="expiration"> Expiration </label>
+                        <input type="date" id="expiration" placeholder="MM/DD/YY">
+                        <br>
+                        <button type="button" id="add-ingredient">Add Ingredient</button>
+                        <br>
+                    </form>
+                </div>
+
+                <div class="sidebar" id="pantrySidebar"> 
+                    <div class="toggle-buttons">
+                        <button id="listViewBtn">&#9776 List</button>
+                        <button id="calendarViewBtn">&#10064 Calendar</button>
+                    </div>                 
+                    <div id="pantryItemsContainer"></div>
+                    <div id="calendarContainer" style="display: none;">
+                        <br>
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="toggle-buttons" style="float:right;">
+                    <button id="allRecipesBtn">All Recipes</button>
+                    <button id="savedRecipesBtn">Saved Recipes</button>
+                  </div>
+                <h2>Recipes</h2>
+                <label>Select ingredients to find recipes! </label>
+                <br><br>
+                <div class="recipeitem" id="recipeResults">
+                    <div id="imageOverlay" class="hidden">
+                        <div id="overlayBg"></div>
+                        <img id="overlayImg" src="" alt="">
+                        <button id="closeOverlay">X</button>
+                    </div>  
+                </div>
+            </div>                           
+
+        </div>
+
+        <div class="middle-content" style="width:93%; text-align:left;">
+            <h2>Discover More Recipes</h2>
+            <label>Refresh page to load more</label><br><br>
+            <div id="discoverRecipes" class="scroll-container"></div>  
+        </div>      
+
+        <br><br><br><br><br><br><br><br>
+
+        <footer>
+            <p> Copyright @ 2025. All rights reserved. </p>
+        </footer>
+
+    </body>
+
+</html>
