@@ -83,7 +83,7 @@ npm start
    Navigate to [http://localhost:3000](http://localhost:3000) on a web browser
 
 3. **Vercel** <br>
-   Unfortunately, we were not unable to deploy our project to Vercel at the time of the project submission. <br>
+   Unfortunately, we were not unable to deploy our project to Vercel at the time of the project submission due to an issue with the Supabase. <br>
    Here is the link: [https://best-before-three.vercel.app/](https://best-before-three.vercel.app/)
 
 <br>
