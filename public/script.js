@@ -2,11 +2,12 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
 // Supabase credentials
-const SUPABASE_URL = 'https://pmujfsicwwxcrvpaqyde.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBtdWpmc2ljd3d4Y3J2cGFxeWRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc1MTU5NzAsImV4cCI6MjA2MzA5MTk3MH0.33bqWkGybWDLepLR8SW92bl3y8aVNf1kCVjcrP4x3zk';
-
+const SUPABASE_URL = process.env.SUPABASE_URL
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY
 // Create client
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Save recipes
 async function saveRecipeToSupabase(recipe) {
