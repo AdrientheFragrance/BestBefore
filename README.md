@@ -79,8 +79,6 @@ npm install
 npm start
 ```
 
-<br>
-
 2. **Run the App on a Server** <br>
    Navigate to [http://localhost:3000](http://localhost:3000) on a web browser
 
