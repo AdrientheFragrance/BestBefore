@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon -e '*'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Adrien Rozario",
@@ -12,7 +12,6 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
     "body-parser": "^2.2.0",
-    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "nodemon": "^3.1.10",
     "usa-state-validator": "^1.0.6"
