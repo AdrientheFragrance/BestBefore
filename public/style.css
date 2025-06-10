@@ -170,7 +170,7 @@ label {
     min-height: 400px;
     display: flex;
     margin: 1px;
-  }
+}
   
   .recipeCard:hover {
     background-color: #fcfcec;

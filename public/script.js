@@ -569,4 +569,3 @@ function renderCalendar() {
     calendar.render();
 }
 
-
