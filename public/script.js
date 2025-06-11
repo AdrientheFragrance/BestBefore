@@ -24,16 +24,9 @@ async function saveRecipeToSupabase(recipe) {
 
 // Fetch saved recipes
 async function fetchSavedRecipes() {
-    const { data, error } = await supabase
-        .from('saved-recipes')
-        .select('*');
-
-    if (error) {
-        console.error('Error fetching saved recipes:', error.message);
-        return [];
-    }
-
-    return data;
+  const res = await fetch('/api/saved-recipes');
+  const recipes = await res.json();
+  console.log(recipes); // Render logic here
 }
 
 // Unsave recipes
