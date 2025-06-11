@@ -24,9 +24,17 @@ async function saveRecipeToSupabase(recipe) {
 
 // Fetch saved recipes
 async function fetchSavedRecipes() {
-  const res = await fetch('/api/saved-recipes');
-  const recipes = await res.json();
-  console.log(recipes); // Render logic here
+  try {
+    const res = await fetch('/api/saved-recipes');
+    if (!res.ok) throw new Error('Network response was not ok');
+    const recipes = await res.json();
+
+    console.log(recipes); // Use this to render on the page
+    return recipes;
+  } catch (error) {
+    console.error('Failed to load saved recipes:', error);
+    return [];
+  }
 }
 
 // Unsave recipes
