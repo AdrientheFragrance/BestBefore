@@ -7,9 +7,6 @@
     { "src": "style.css", "use": "@vercel/static" },
     { "src": "images/**/*", "use": "@vercel/static" }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" }
-  ],
   "rewrites": [
     { "source": "/", "destination": "/home.html" }
   ]
