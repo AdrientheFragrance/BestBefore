@@ -70,25 +70,62 @@ This Developer Manual provides guidance for future developers maintaining or ext
 
 ## 📦 Installation Instructions
 
-1. **Clone the Repository**
+### 1. Deployment (Live) ###
+   The site is deployed on Vercel and can be accessed here: [https://best-before-three.vercel.app/](https://best-before-three.vercel.app/)
 
-```bash
-git clone https://github.com/your-username/bestbefore.git
-cd bestbefore
-npm install
-npm start
-```
+### 2. Local Development (Optional Alternative) ###
+   If you want to run the project locally for development or testing, open Command Prompt or Terminal <br> <br>
+   
+   1. Clone the repository
+   ```
+   git clone https://github.com/your-username/bestbefore.git
+   ```
+   2. Navigate to the project
+   ```
+   cd bestbefore
+   ```
+   3. Install Vercel CLI if you haven't already
+   ```
+   npm install -g vercel
+   ```
+   4. Install project dependencies
+   ```
+   npm install
+   ```
+   5. Run the development server
+   ```
+   vercel dev
+   ```
 
-2. **Run the App on a Server** <br>
+   📝 **First Time Using Vercel?**
+   ```
+   vercel login
+   ```
+   You’ll receive a link in your email. Once authenticated, you're ready to use vercel dev
+
+   🌐 **Run the App on a Server** 
    Navigate to [http://localhost:3000](http://localhost:3000) on a web browser
+   
+<br>
 
-3. **Vercel** <br>
-   Unfortunately, we were not unable to deploy our project to Vercel at the time of the project submission due to an issue with the Supabase. <br>
-   Here is the link: [https://best-before-three.vercel.app/](https://best-before-three.vercel.app/)
+## 📁 File Structure
+- index.html – Main entry point
+- script.js – Handles all interactive logic
+- style.css – Custom styling
+- api/ – Vercel serverless functions (e.g. Supabase interaction)
 
 <br>
 
-## 🌐 API
+## 🧑‍💻 Tech Stack
+- HTML, CSS, JavaScript
+= Supabase (DB and anonymous user auth)
+- FullCalendar.js (for expiration calendar)
+- Luxon (for date formatting)
+- Vercel (for deployment and serverless backend)
+
+<br>
+
+## ⚙️ API
 
 **🍲 TheMealDB API** <br>
 Main external data source for ingredients and recipes, primarily used to search for recipes by ingredient. Access the API at [https://www.themealdb.com/api.php](https://www.themealdb.com/api.php)
