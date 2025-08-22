@@ -1,5 +1,9 @@
 # 🥫 BestBefore 
 **Track your pantry. Cook smarter. Waste less.**
+<br>
+
+<img src="https://github.com/user-attachments/assets/854e5072-a11b-4f41-a734-3da1c6beda54" width="1800" height="862" alt="image" />
+
 
 <br>
 
